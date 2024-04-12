@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  frontend:
+    container_name: frontend
+    image: manas2002goyal/frontend
+    ports:
+      - "3000:3000"
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+
+  backend:
+    container_name: backend
+    image: manas2002goyal/backend
+    ports:
+      - "1212:1212"
