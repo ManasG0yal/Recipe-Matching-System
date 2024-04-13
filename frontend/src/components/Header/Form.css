@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.head {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.25em; /* 20px equivalent in em */
+  /* background-color: rgb(244, 107, 107); */
+}
+
+.headings {
+  width: 100%;
+  font-size: 2.5em;
+  padding-left: 1em;
+  font-weight: bold;
+  /* margin: 0.625em; 10px equivalent in em */
+  color: #fefefe; /* Dark gray color */
+  /* background-color: rgb(244, 107, 107); */
+  background-color: #ef4545;
+}
+
+.formdiv {
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #f3eed9;
+  background-image: url("./header_image.jpg");
+  background-size: cover; /* Cover the entire background */
+  background-position:0ic; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  margin: 0;
+  padding: 1.25em; /* 20px equivalent in em */
+  /* border-radius: 0.625em; 10px equivalent in em */
+  box-shadow: 0 0.125em 0.313em rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.form {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-left: 30%;
+  margin-top: 3%;
+}
+
+.select,
+.input,
+.submit-button {
+  flex: 1; /* Each element takes equal space */
+  margin-right: 0.625em; /* 10px equivalent in em */
+  margin-bottom: 0.625em; /* 10px equivalent in em */
+  padding: 0.625em; /* 10px equivalent in em */
+  border: 0.063em solid #fff9f9; /* Light gray border */
+  border-radius: 0.313em; /* 5px equivalent in em */
+  height: 4em;
+}
+
+.input {
+  box-sizing: border-box; /* Ensure padding doesn't add to width */
+}
+.input{
+  flex: 4;
+}
+.submit-button {
+  flex: 1;
+  margin-right: 0.625em;
+  margin-bottom: 0.625em;
+  padding: 0.625em;
+  border: 0.063em solid #ccc;
+  border-radius: 0.8em;
+  height: 4em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: #ee5858;
+  color: white;
+}
+
+.submit-button:hover {
+  background-color: #BF5082; /* Darker green color on hover */
+}
+
+.ptag{
+  margin-left: 9%;
+}
+/* Media query for screens smaller than 60% of total screen length */
+@media (max-width: 60%) {
+  .formdiv{
+    height: 100rem;
+  }
+  .form {
+    flex-direction: column; /* Change to column layout */
+    align-items: center; /* Center items horizontally */
+    margin-left: 0; /* Reset margin */
+    width: 100%; /* Take full width */
+  }
+
+  .select,
+  .input,
+  .submit-button {
+    flex :content; /* Reset flex property */
+    width: 70%; /* Take full width */
+    margin-right: 0; /* Remove right margin */
+  }
+}

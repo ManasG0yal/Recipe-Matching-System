@@ -1,0 +1,139 @@
+.background-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(0.5rem); /* Convert to rem */
+  z-index: 999;
+}
+
+.floating-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 1.25rem; /* Convert to rem */
+  border-radius: 0.8rem; /* Convert to rem */
+  box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.2); /* Convert to rem */
+  z-index: 1001;
+  height: 96%;
+  width: 80%;
+  overflow-y: auto;
+}
+
+.header {
+  margin-bottom: 5%;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-btn {
+  cursor: pointer;
+  font-size: 5rem; /* Convert to rem */
+  margin-right: 1%;
+  color: white;
+}
+
+.image-container {
+  height: 100%;
+  width: 50%;
+  margin-bottom: 2.5%; /* Convert to percentage */
+}
+
+.details {
+  height: 100%;
+  width: 50%;
+  display: flex;
+}
+
+.loading-screen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(225, 222, 222, 0.845);
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #333;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+.loading-text {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.recipe-image {
+  max-width: 100%;
+  width: 30em; /* Keep as pixels or convert to rem */
+  height: 30em; /* Keep as pixels or convert to rem */
+  border-radius: 0.8rem; /* Convert to rem */
+  margin-left: 2em; /* Keep as pixels or convert to rem */
+}
+
+.recipe-details {
+  margin-bottom: 2.5%; /* Convert to percentage */
+}
+
+.instructions {
+  margin-bottom: 2.5%; /* Convert to percentage */
+}
+
+.instructions h3 {
+  margin-bottom: 1.25%; /* Convert to percentage */
+}
+
+.imgtopcont {
+  display: flex;
+  flex-direction: row;
+}
+
+.about {
+  margin-bottom: 10%;
+  margin-top: 3%;
+}
+
+.center {
+  align-items: center;
+}
+
+.headval {
+  width: 100%;
+  height: 3rem; /* Convert to rem */
+}
+
+.ingredev {
+  display: grid;
+}
+
+/* Media query for screens smaller than 1350px */
+@media (max-width: 84.375rem) { /* Convert to rem */
+  .imgtopcont {
+    flex-direction: column;
+  }
+
+  .image-container,
+  .details {
+    width: 100%;
+  }
+}
