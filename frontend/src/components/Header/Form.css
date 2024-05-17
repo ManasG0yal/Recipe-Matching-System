@@ -26,7 +26,7 @@
   width: 100%;
   height: 12rem;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   background-color: #f3eed9;
   background-image: url("./header_image.jpg");
   background-size: cover; /* Cover the entire background */
@@ -63,13 +63,13 @@
   box-sizing: border-box; /* Ensure padding doesn't add to width */
 }
 .input{
-  flex: 4;
+  flex: 3;
 }
 .submit-button {
   flex: 1;
   margin-right: 0.625em;
   margin-bottom: 0.625em;
-  padding: 0.625em;
+  /* padding: 0.625em; */
   border: 0.063em solid #ccc;
   border-radius: 0.8em;
   height: 4em;
