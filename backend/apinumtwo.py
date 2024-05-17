@@ -7,14 +7,10 @@ from flask_cors import CORS
 import os
 import boto3
 labels =[]
-# function to analyse the image
-
-# Replace 'image_path' with the path to your image file
-image_path = ''
 
 # Replace 'rekognition_arn' with your Rekognition ARN
 rekognition_arn = 'arn:aws:rekognition:us-east-1:877147146763:project/vege-reco/version/vege-reco.2024-05-08T19.44.28/1715177668960'
-
+# function to analyse the image
 def analyze_image(image_path, rekognition_arn):
     # Initialize Rekognition client
     rekognition_client = boto3.client('rekognition')
